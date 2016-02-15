@@ -1,0 +1,54 @@
+<resources>
+    <dimen name="text_size_xxxlarge">32sp</dimen>
+    <dimen name="text_size_xxlarge">28sp</dimen>
+    <dimen name="text_size_xlarge">24sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_tiny">12sp</dimen>
+
+    <dimen name="space_0.5">4dp</dimen>
+    <dimen name="space_1">8dp</dimen>
+    <dimen name="space_1.5">12dp</dimen>
+    <dimen name="space_2">16dp</dimen>
+    <dimen name="space_2.5">20dp</dimen>
+    <dimen name="space_3">24dp</dimen>
+    <dimen name="space_4">32dp</dimen>
+    <dimen name="space_4.5">36dp</dimen>
+    <dimen name="space_5">40dp</dimen>
+    <dimen name="space_6">48dp</dimen>
+    <dimen name="space_8">64dp</dimen>
+    <dimen name="space_8.5">68dp</dimen>
+
+    <dimen name="default_row_height">68dp</dimen>
+
+    <dimen name="elevation_toolbar">8dp</dimen>
+    <dimen name="elevation_box">4dp</dimen>
+
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="home_slider_height">220dp</dimen>
+    <dimen name="promoted_category_width">50dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="drawer_width">280dp</dimen>
+    <dimen name="slide_drawer_shadow_width">0dp</dimen>
+    <dimen name="list_setting_bar_height">42dp</dimen>
+    <dimen name="item_product_bookmark_size">36dp</dimen>
+    <dimen name="item_product_list_bookmark_size">24dp</dimen>
+    <dimen name="item_product_list_seprator_height">1dp</dimen>
+    <dimen name="slidingmenu_offset">36dp</dimen>
+    <dimen name="filter_check_box_size">24dp</dimen>
+    <dimen name="buy_btn_height">36dp</dimen>
+    <dimen name="comment_average_container_hight">250dp</dimen>
+    <dimen name="tab_logo_width">60dp</dimen>
+    <dimen name="home_search_box_height">80dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_top_for_recyclerview_from_top_toolbar">65dp</dimen>
+
+    <dimen name="margin_top_date_picker_field">-35dp</dimen>
+    <dimen name="height_date_picker_field">32dp</dimen>
+    <dimen name="load_more_size">30dp</dimen>
+    <dimen name="comparison_product_image_size">75dp</dimen>
+    <dimen name="margin_bottom_for_loading">60dp</dimen>
+</resources>

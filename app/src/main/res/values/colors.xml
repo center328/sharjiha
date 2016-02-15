@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#0379d3</color>
+
+    <color name="default_text_color">#6eade0</color>
+
+    <color name="white">#e5e5e3</color>
+    <color name="accent">#ffa600</color>
+    <color name="black">#01487c</color>
+    <color name="transparent_all">#FF01487c</color>
+    <color name="odd">#000000</color>
+    <color name="even">#ffffff</color>
+    <color name="row_item_un_selected">#01487c</color>
+    <color name="row_item_selected">#001743</color>
+    <color name="separate_color">#1388e5</color>
+</resources>

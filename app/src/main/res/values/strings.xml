@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">شارژیها</string>
+
+    <string name="direct_charge_main_sim">شارژ مستقیم سیمکارت اصلی</string>
+    <string name="direct_charge_other_sim">شارژ مستقیم سایر سیمکارت ها</string>
+    <string name="get_remain_charge">دریافت باقیمانده شارژ</string>
+    <string name="buy">خرید</string>
+    <string name="cellphone">شماره</string>
+</resources>

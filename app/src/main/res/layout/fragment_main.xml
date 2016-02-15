@@ -1,0 +1,424 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:elevation="@dimen/elevation_box"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_box"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="@dimen/default_row_height"
+            android:background="@color/background"
+            >
+
+            <TextView
+                style="@style/TextView.English"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:padding="@dimen/space_2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="@dimen/default_row_height"
+            android:background="@color/separate_color"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/default_row_height"
+                android:layout_height="@dimen/default_row_height"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/include_seperation" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="80"
+                    android:layout_height="@dimen/default_row_height"
+                    android:background="@color/row_item_un_selected"
+                    >
+                    <TextView
+                        android:id="@+id/direct_another"
+                        style="@style/TextView.English"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/direct_charge_other_sim"
+                        android:textSize="@dimen/text_size_large"
+                        android:textColor="@color/default_text_color"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/space_2"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="@dimen/default_row_height"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/direct_another_logo"
+                        android:layout_width="@dimen/default_row_height"
+                        android:layout_height="@dimen/default_row_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/all_sim"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/include_seperation" />
+
+            <LinearLayout
+                android:id="@+id/direct_another_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="80"
+                    android:layout_height="wrap_content"
+                    android:background="@color/row_item_un_selected"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_2"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cellphone"
+                        android:textColorHint="@color/white"
+                        />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio_button_style"
+                            android:text="شارژ 1000 تومانی"
+                            style="@style/TextView.English"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textColor="@color/white"
+                            android:paddingBottom="@dimen/space_1"
+                            android:paddingTop="@dimen/space_1"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio_button_style"
+                            android:text="شارژ 2000 تومانی"
+                            style="@style/TextView.English"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textColor="@color/white"
+                            android:paddingBottom="@dimen/space_1"
+                            android:paddingTop="@dimen/space_1"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio_button_style"
+                            android:text="شارژ 5000 تومانی"
+                            style="@style/TextView.English"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textColor="@color/white"
+                            android:paddingBottom="@dimen/space_1"
+                            android:paddingTop="@dimen/space_1"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio_button_style"
+                            android:text="شارژ 10000 تومانی"
+                            style="@style/TextView.English"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textColor="@color/white"
+                            android:paddingBottom="@dimen/space_1"
+                            android:paddingTop="@dimen/space_1"
+                            />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buy"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/black"
+                        android:minHeight="0dp"
+                        android:paddingBottom="@dimen/space_0.5"
+                        android:paddingTop="@dimen/space_0.5"
+                        android:paddingLeft="@dimen/space_2"
+                        android:paddingRight="@dimen/space_2"
+                        style="@style/Button"
+                        android:background="@color/white"
+                        android:gravity="center" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+                    <FrameLayout
+                        android:id="@+id/irancell_wrap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/irancell"
+                            android:layout_width="@dimen/default_row_height"
+                            android:layout_height="@dimen/default_row_height"
+                            android:layout_gravity="center"
+                            android:src="@drawable/irancell"
+                            />
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/mci_wrap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/mci"
+                            android:layout_width="@dimen/default_row_height"
+                            android:layout_height="@dimen/default_row_height"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mci"
+                            />
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/rightel_wrap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/rightel"
+                            android:layout_width="@dimen/default_row_height"
+                            android:layout_height="@dimen/default_row_height"
+                            android:layout_gravity="center"
+                            android:src="@drawable/rightel"
+                            />
+
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/include_seperation" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="80"
+                    android:layout_height="@dimen/default_row_height"
+                    android:background="@color/row_item_un_selected"
+                    >
+                    <TextView
+                        style="@style/TextView.English"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/get_remain_charge"
+                        android:textSize="@dimen/text_size_large"
+                        android:textColor="@color/default_text_color"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/space_2"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="@dimen/default_row_height"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/default_row_height"
+                        android:layout_height="@dimen/default_row_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/remain"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/include_seperation" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="80"
+                    android:layout_height="@dimen/default_row_height"
+                    android:background="@color/row_item_un_selected"
+                    >
+                    <TextView
+                        android:id="@+id/direct_main"
+                        style="@style/TextView.English"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/direct_charge_main_sim"
+                        android:textSize="@dimen/text_size_large"
+                        android:textColor="@color/default_text_color"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/space_2"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="@dimen/default_row_height"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/direct_main_logo"
+                        android:layout_width="@dimen/default_row_height"
+                        android:layout_height="@dimen/default_row_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/mci"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/include_seperation" />
+
+            <LinearLayout
+                android:id="@+id/direct_main_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="80"
+                    android:layout_height="wrap_content"
+                    android:background="@color/row_item_un_selected"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_2"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:orientation="vertical"
+                        >
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio_button_style"
+                            android:text="شارژ 1000 تومانی"
+                            style="@style/TextView.English"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textColor="@color/white"
+                            android:paddingBottom="@dimen/space_1"
+                            android:paddingTop="@dimen/space_1"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio_button_style"
+                            android:text="شارژ 2000 تومانی"
+                            style="@style/TextView.English"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textColor="@color/white"
+                            android:paddingBottom="@dimen/space_1"
+                            android:paddingTop="@dimen/space_1"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio_button_style"
+                            android:text="شارژ 5000 تومانی"
+                            style="@style/TextView.English"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textColor="@color/white"
+                            android:paddingBottom="@dimen/space_1"
+                            android:paddingTop="@dimen/space_1"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/radio_button_style"
+                            android:text="شارژ 10000 تومانی"
+                            style="@style/TextView.English"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textColor="@color/white"
+                            android:paddingBottom="@dimen/space_1"
+                            android:paddingTop="@dimen/space_1"
+                            />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buy"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/black"
+                        android:minHeight="0dp"
+                        android:paddingBottom="@dimen/space_0.5"
+                        android:paddingTop="@dimen/space_0.5"
+                        android:paddingLeft="@dimen/space_2"
+                        android:paddingRight="@dimen/space_2"
+                        android:layout_marginTop="@dimen/space_2"
+                        style="@style/Button"
+                        android:background="@color/white"
+                        android:gravity="center" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

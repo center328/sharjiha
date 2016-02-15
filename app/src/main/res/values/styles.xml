@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="TextView" parent="android:TextAppearance">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingTop">@dimen/space_1</item>
+        <item name="android:paddingBottom">@dimen/space_1</item>
+        <item name="android:textColor">@color/default_text_color</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:radius">10dp</item>
+        <item name="android:bottomLeftRadius">10dp</item>
+        <item name="android:bottomRightRadius">10dp</item>
+        <item name="android:topLeftRadius">10dp</item>
+        <item name="android:topRightRadius">10dp</item>
+        <item name="fontPath">fonts/BYEKAN.TTF</item>
+    </style>
+
+    <style name="TextView.English">
+        <item name="fontPath">fonts/BYEKAN.TTF</item>
+    </style>
+
+    <style name="English_TypeFace">
+        <item name="fontPath">fonts/BHoma.ttf</item>
+    </style>
+</resources>
